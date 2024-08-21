@@ -1,6 +1,7 @@
 import streamlit as st
 import requests
 import random
+import webbrowser
 
 # Function to generate a random code
 def generate_random_code(length=6):
@@ -48,9 +49,12 @@ if st.session_state.verification_code:
         if entered_code == st.session_state.verification_code:
             st.session_state.is_verified = True
             st.write("You have successfully logged in!")
+            # webbrowser.open('https://katebyaar.ir/')
+            
         else:
             st.write("Invalid verification code. Please try again.")
 
 # Example of post-login content
 if st.session_state.is_verified:
     st.write("Welcome to your dashboard!")
+    webbrowser.open('https://katebyaar.ir/')
