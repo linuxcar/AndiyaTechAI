@@ -33,7 +33,7 @@ st.title("Login with Verification Code")
 username = st.text_input("User Name")
 password = st.text_input("Password", type="password")
 recipient_number = st.text_input("Recipient Number")
-special_number = st.text_input("Special Number")
+special_number = "3000797111"#st.text_input("Special Number")
 checking_message_id = st.text_input("Checking Message ID")
 
 if st.button("Send Verification Code"):
