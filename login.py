@@ -56,5 +56,5 @@ if st.session_state.verification_code:
 
 # Example of post-login content
 if st.session_state.is_verified:
-    st.write("Welcome to your dashboard!")
+    st.write("Welcome to katebyaar!")
     webbrowser.open('https://katebyaar.ir/')
