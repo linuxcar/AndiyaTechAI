@@ -9,7 +9,7 @@ import json
 import openai
 import time
 
-# Initialize OpenAI API key
+# Initialize OpenAI API key ---------sadeghparsa
 openai.api_key = 'your-api-key'
 
 # Function to crawl the website and extract text data
