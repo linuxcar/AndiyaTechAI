@@ -7,7 +7,7 @@ import webbrowser
 def generate_random_code(length=6):
     return ''.join([str(random.randint(0, 9)) for _ in range(length)])
 
-# Function to send SMS
+# Function to send SMS sunway
 def send_sms(username, password, recipient_number, random_code, special_number, checking_message_id):
     url = f"https://sms.sunwaysms.com/smsws/HttpService.ashx?service=SendArray"
     message_body = f"Your verification code is: {random_code}"
