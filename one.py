@@ -6,7 +6,7 @@ import requests
 from bs4 import BeautifulSoup
 from urllib.parse import urljoin
 import json
-import openai
+import openai 
 import time
 
 # Initialize OpenAI API key 
